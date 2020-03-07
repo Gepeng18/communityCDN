@@ -1,5 +1,5 @@
 /* PrismJS 1.19.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+apacheconf+aspnet+bash+c+csharp+cpp+cmake+css-extras+diff+django+docker+git+go+http+java+javadoc+javadoclike+jsdoc+js-extras+js-templates+json+json5+julia+kotlin+latex+lua+makefile+markdown+markup-templating+matlab+nginx+objectivec+opencl+perl+php+phpdoc+php-extras+plsql+powershell+prolog+python+r+jsx+ruby+scala+shell-session+sql+swift+velocity+vim+yaml&plugins=line-highlight+line-numbers+show-invisibles+autolinker+wpd+custom-class+file-highlight+show-language+jsonp-highlight+highlight-keywords+remove-initial-line-feed+inline-color+previewers+autoloader+keep-markup+command-line+unescaped-markup+normalize-whitespace+data-uri-highlight+toolbar+copy-to-clipboard+download-button+match-braces+diff-highlight+filter-highlight-all */
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+apacheconf+aspnet+bash+c+csharp+cpp+cmake+css-extras+diff+django+docker+git+go+http+java+javadoc+javadoclike+jsdoc+js-extras+js-templates+json+json5+julia+kotlin+latex+lua+makefile+markdown+markup-templating+matlab+nginx+objectivec+opencl+perl+php+phpdoc+php-extras+plsql+powershell+prolog+python+r+jsx+ruby+scala+shell-session+sql+swift+velocity+vim+yaml&plugins=line-highlight+line-numbers+autolinker+wpd+custom-class+file-highlight+show-language+jsonp-highlight+highlight-keywords+remove-initial-line-feed+inline-color+previewers+autoloader+keep-markup+command-line+unescaped-markup+normalize-whitespace+data-uri-highlight+toolbar+copy-to-clipboard+download-button+match-braces+diff-highlight+filter-highlight-all */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -231,41 +231,6 @@ pre[class*="language-"].line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-
-.token.tab:not(:empty),
-.token.cr,
-.token.lf,
-.token.space {
-	position: relative;
-}
-
-.token.tab:not(:empty):before,
-.token.cr:before,
-.token.lf:before,
-.token.space:before {
-	color: #808080;
-	opacity: 0.6;
-	position: absolute;
-}
-
-.token.tab:not(:empty):before {
-	content: '\21E5';
-}
-
-.token.cr:before {
-	content: '\240D';
-}
-
-.token.crlf:before {
-	content: '\240D\240A';
-}
-.token.lf:before {
-	content: '\240A';
-}
-
-.token.space:before {
-	content: '\00B7';
-}
 
 .token a {
 	color: inherit;
