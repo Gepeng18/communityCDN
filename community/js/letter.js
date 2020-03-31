@@ -9,7 +9,7 @@ function send_letter() {
 	var toName = $("#recipient-name").val();
 	var content = $("#message-text").val();
 	$.post(
-	    CONTEXT_PATH + "/letter/send",
+	    CONTEXT_PATH + "/letter",
 	    {"toName":toName,"content":content},
 	    function(data) {
 	        data = $.parseJSON(data);
