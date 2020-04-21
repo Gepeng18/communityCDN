@@ -358,7 +358,7 @@ function addFolderElement() {
         "<td>" +
         "<form id='addFolderForm' action='addFolder' method='post'>" +
         "<input id='newFolder'  autocomplete='off' name='fileFolderName' type='text' onblur='checkAddFolder()'>" +
-        "<input type='hidden' name='parentFolderId' value='" + now + "'>" +
+        "<input type='hidden' name='id' value='" + now + "'>" +
         "</form>" +
         "</td>" +
         "<td style='font-weight: 300'>文件夹</td>" +
