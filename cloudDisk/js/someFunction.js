@@ -91,11 +91,11 @@ $(function () {
             var x = 10;
             //定义Y初始坐标量
             var y = 20;
-            $(".files").mouseover(function (e) {
+            $(".flag").mouseover(function (e) {
                 //封装图片TITLE
                 var showPath = $(".flag td #showPath").html();
                 //声明层对象
-                var tooltip = "<div id='thumbnail_img' style='z-index:10;position:absolute'><img src='" + showPath + "' alt='预览图' style='max-width: 400px;max-height: 300px' />" + "</div>";
+                var tooltip = "<div id='thumbnail_img' style='z-index:10;position:absolute'><img src='" + showPath + "' alt='预览图' style='max-width: 400px;max-height: 300px;' />" + "</div>";
                 //将层追加到文档中
                 $("body").append(tooltip);
                 //设置层样式
@@ -138,17 +138,17 @@ function closeAndPause() {
 
 function suoxiao() {
     var postion = $("#audioPlayerPosition").text();
-    if (postion == 250) {
+    if (postion == 0) {
         $("#audioPlayerTool").animate({
-            left: "5px"
+            left: "-240px"
         }, "slow");
-        $('#audioPlayerPosition').html(5);
+        $('#audioPlayerPosition').html(240);
         $('#audioPlayerSrc').attr("src", "https://pyyf.oss-cn-hangzhou.aliyuncs.com/community/icons/右.png");
     } else {
         $("#audioPlayerTool").animate({
-            left: "250px"
+            left: "0px"
         }, "slow");
-        $('#audioPlayerPosition').html(250);
+        $('#audioPlayerPosition').html(0);
         $('#audioPlayerSrc').attr("src", "https://pyyf.oss-cn-hangzhou.aliyuncs.com/community/icons/左.png");
     }
 
